@@ -1,0 +1,62 @@
+/* 1 SImple Hello Friends */
+h1:selection {
+  background-color: #ffe898;
+}
+
+/* 2 Animated Hello friends*/
+.card {
+  height: 200px;
+  outline: #fff double 1px;
+  outline-offset: -8px;
+  background-image: url(https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 3rem;
+  transition: all 0.5s linear;
+}
+.card h3 {
+  width: 350px;
+  animation: typing 2s steps(22) alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+.card:hover {
+  outline-offset: -25px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+/* 4 Photo animation */
+.container {
+  position: relative;
+  margin: 10px 20px;
+  float: left;
+  width: 400px;
+}
+
+.container img {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  transition: opacity 2s ease-in-out;
+}
+
+.container .hidden-photo:hover {
+  opacity: 0;
+}
+.container img.photo3 {
+  height: 300px;
+  width: 400px;
+  transition: all 0.3s linear;
+}
+img:hover {
+  filter: blur(20px);
+}
